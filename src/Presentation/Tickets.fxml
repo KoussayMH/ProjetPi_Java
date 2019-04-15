@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainWindow" stylesheets="@../utils/styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.TicketsController">
+   <children>
+      <AnchorPane layoutX="217.0" layoutY="67.0" prefHeight="257.0" prefWidth="156.0" style="-fx-border-color: grey; -fx-background-color: #FFA07A;" styleClass="mainWindow">
+         <children>
+            <Label fx:id="prixs" layoutX="65.0" layoutY="102.0" text="Label" />
+            <TextField fx:id="qts" layoutX="32.0" layoutY="146.0" prefHeight="25.0" prefWidth="96.0" styleClass="loginInput" />
+            <Button fx:id="sButton" layoutX="12.0" layoutY="205.0" mnemonicParsing="false" style="-fx-background-color: #FFA07A;" styleClass="login_button2" text="Ajouter au panier" />
+            <Label fx:id="titres" layoutX="48.0" layoutY="28.0" text="Label" textFill="#fffbfb">
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="64.0" prefHeight="257.0" prefWidth="150.0" style="-fx-border-color: grey; -fx-background-color: #FFA07A;" styleClass="mainWindow">
+         <children>
+            <Label fx:id="titreg" layoutX="47.0" layoutY="100.0" prefHeight="17.0" prefWidth="44.0" style="-fx-font-size: 14;" stylesheets="@../utils/styles.css" text="Label" textFill="#f5ecec" />
+            <TextField fx:id="qtg" layoutX="27.0" layoutY="146.0" prefHeight="25.0" prefWidth="96.0" styleClass="loginInput" />
+            <Button fx:id="gButton" layoutX="11.0" layoutY="205.0" mnemonicParsing="false" style="-fx-background-color: white;" styleClass="login_button2" text="Ajouter au panier" />
+            <Label fx:id="prixg" layoutX="39.0" layoutY="25.0" prefHeight="38.0" prefWidth="79.0" text="Label" textFill="#f8f5f5">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="423.0" layoutY="65.0" prefHeight="257.0" prefWidth="150.0" style="-fx-border-color: grey; -fx-background-color: #FFA07A;" styleClass="mainWindow">
+         <children>
+            <Label fx:id="titrec" layoutX="50.0" layoutY="32.0" text="Label" textFill="#f2f0f0">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Label>
+            <Label fx:id="prixc" layoutX="61.0" layoutY="136.0" text="Label" />
+            <TextField fx:id="qtc" layoutX="20.0" layoutY="153.0" prefWidth="115.0" styleClass="loginInput" />
+            <Button fx:id="ButtonC" layoutX="13.0" layoutY="203.0" mnemonicParsing="false" styleClass="login_button2" text="Ajouter au panier" />
+         </children></AnchorPane>
+      <Label fx:id="event" layoutX="266.0" layoutY="29.0" prefHeight="0.0" prefWidth="79.0" text="Label" />
+   </children>
+</AnchorPane>
