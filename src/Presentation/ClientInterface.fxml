@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.ClientInterfaceController">
+   <children>
+      <ImageView fitHeight="828.0" fitWidth="1200.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@1.jpg" />
+         </image>
+      </ImageView>
+      <VBox fx:id="groupCompany" layoutX="81.0" layoutY="382.0" prefHeight="207.0" prefWidth="200.0" spacing="8.0" styleClass="menus">
+         <children>
+            <JFXButton prefHeight="71.0" prefWidth="211.0">
+               <graphic>
+                  <Label prefHeight="60.0" prefWidth="207.0" text="          Evénements" textAlignment="CENTER" textFill="#ff7d0c">
+                     <font>
+                        <Font name="Roboto Medium" size="18.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </JFXButton>
+            <StackPane>
+               <children>
+                  <ImageView fitHeight="108.0" fitWidth="248.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@EventsGrey.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+      <VBox fx:id="groupCompany2" layoutX="358.0" layoutY="382.0" prefHeight="207.0" prefWidth="200.0" spacing="8.0" styleClass="menus">
+         <children>
+            <JFXButton prefHeight="60.0" prefWidth="200.0">
+               <graphic>
+                  <Label prefHeight="60.0" prefWidth="207.0" text="                Clubs" textAlignment="CENTER" textFill="#ff7d0c">
+                     <font>
+                        <Font name="Roboto Medium" size="18.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </JFXButton>
+            <StackPane>
+               <children>
+                  <ImageView fitHeight="108.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@clubGrey.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+      <VBox fx:id="groupCompany21" layoutX="635.0" layoutY="382.0" prefHeight="207.0" prefWidth="200.0" spacing="8.0" styleClass="menus">
+         <children>
+            <JFXButton prefHeight="60.0" prefWidth="181.0">
+               <graphic>
+                  <Label prefHeight="60.0" prefWidth="207.0" text="             Publicités" textAlignment="CENTER" textFill="#ff7d0c">
+                     <font>
+                        <Font name="Roboto Medium" size="18.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </JFXButton>
+            <StackPane>
+               <children>
+                  <ImageView fitHeight="108.0" fitWidth="224.0" opacity="0.72" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pubGrey.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+      <VBox fx:id="groupCompany1" layoutX="912.0" layoutY="382.0" prefHeight="207.0" prefWidth="200.0" spacing="8.0" styleClass="menus">
+         <children>
+            <JFXButton>
+               <graphic>
+                  <Label prefHeight="60.0" prefWidth="207.0" text="           Promotions" textAlignment="CENTER" textFill="#ff7d0c">
+                     <font>
+                        <Font name="Roboto Medium" size="18.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </JFXButton>
+            <StackPane>
+               <children>
+                  <ImageView fitHeight="108.0" fitWidth="224.0" opacity="0.79" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@promoIcon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+      <JFXButton fx:id="deconnexion" layoutX="1075.0" layoutY="630.0" onAction="#deconnecterClient" prefHeight="15.0" prefWidth="108.0" style="-fx-background-color: #ff7d0c;" text="Déconnexion" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <font>
+            <Font size="12.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="REPLY_ALL" size="15" />
+         </graphic>
+      </JFXButton>
+      <Label fx:id="username" layoutX="26.0" layoutY="598.0" prefHeight="36.0" prefWidth="178.0" text="Username" textFill="#ff7d0c" />
+   </children>
+</AnchorPane>
