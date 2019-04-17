@@ -17,12 +17,27 @@ public class Comment {
         private int max_caracs;
         private String description ;
         private int Event_id;
+        private int user_id;
 
-    public Comment(int id, Date date, int max_caracs, String description) {
+        
+    public Comment(int id, Date date, int max_caracs, String description,int Event_id,int user_id) {
         this.id = id;
         this.date = date;
         this.max_caracs = max_caracs;
         this.description = description;
+        this.Event_id=Event_id;
+        this.user_id=user_id;
+    }
+
+    public Comment() {
+    }
+
+    public int getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(int user_id) {
+        this.user_id = user_id;
     }
 
     public int getId() {

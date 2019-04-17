@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="Presentation.Event_FrontController">
+   <children>
+      <TextField id="search_Input" fx:id="input_recherche" layoutX="109.0" layoutY="17.0" onKeyReleased="#handleInputSearchAction" prefHeight="39.0" prefWidth="152.0" promptText="Mot clé.." styleClass="formInput" stylesheets="@../styles.css">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <Label layoutX="19.0" layoutY="25.0" prefHeight="22.0" prefWidth="106.0" text="Recherche :" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="54.0" layoutY="79.0" prefHeight="200.0" prefWidth="526.0">
+         <content>
+            <ListView fx:id="table" prefHeight="200.0" prefWidth="511.0" />
+         </content>
+      </ScrollPane>
+      <Button id="button_add" fx:id="btnajout" alignment="BASELINE_CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="65.0" layoutY="300.0" onAction="#ajoutAction" onMouseClicked="#handleButtonAddAction" prefHeight="31.0" prefWidth="85.0" styleClass="button_Submit" stylesheets="@../styles.css" text="Ajouter" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Lato Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button id="button_add" fx:id="btnconsulter" alignment="BASELINE_CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="199.0" layoutY="301.0" onAction="#SingleEventAction" onMouseClicked="#handleButtonAddAction" prefHeight="31.0" prefWidth="85.0" styleClass="button_Submit" stylesheets="@../styles.css" text="Consulter event" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Lato Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="find_event" layoutX="328.0" layoutY="305.0" mnemonicParsing="false" onAction="#search_event" text="Button" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.lynden.gmapsfx.GoogleMapView?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="Presentation.Event_mapController">
+   <children>
+      <GoogleMapView fx:id="mapView" layoutX="-1.0" prefHeight="401.0" prefWidth="606.0">
+         <children>
+            <ComboBox fx:id="date_list_CB" onAction="#afficher_events_parDate" prefWidth="150.0" promptText="date_list_CB" />
+         </children>
+      </GoogleMapView>
+   </children>
+</AnchorPane>

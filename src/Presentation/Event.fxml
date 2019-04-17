@@ -12,18 +12,18 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="519.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.EventController">
+<AnchorPane id="AnchorPane" fx:id="refresh" prefHeight="519.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.EventController">
    <children>
       <TableView id="table" fx:id="table" layoutX="34.0" layoutY="65.0" prefHeight="377.0" prefWidth="665.0">
          <columns>
             <TableColumn id="col_id_expert" fx:id="col_id" prefWidth="54.0" text="Id" />
-            <TableColumn id="col_cin" fx:id="col_titre" onEditCommit="#onEditStringCommitAction" prefWidth="109.0" text="Titre" />
-            <TableColumn id="col_cin" fx:id="col_image1" onEditCommit="#onEditIntegerCommitAction" prefWidth="63.0" text="Image1" />
-            <TableColumn id="col_nom" fx:id="col_date" onEditCommit="#onEditStringCommitAction" prefWidth="84.0" text="Date" />
-            <TableColumn id="col_prenom" fx:id="col_description" onEditCommit="#onEditStringCommitAction" prefWidth="127.0" text="Description" />
-            <TableColumn id="col_date_naissance" fx:id="col_etat" onEditCommit="#onEditDateCommitAction" prefWidth="50.0" text="Etat" />
-            <TableColumn id="col_adresse" fx:id="col_lieu" onEditCommit="#onEditStringCommitAction" prefWidth="67.0" text="Lieu" />
-            <TableColumn id="col_tel" fx:id="col_nbre_participants" onEditCommit="#onEditIntegerCommitAction" prefWidth="110.0" text="nb participants" />
+            <TableColumn id="col_cin" fx:id="col_titre" onEditCommit="#edit_titre" prefWidth="109.0" text="Titre" />
+            <TableColumn id="col_cin" fx:id="col_image1" prefWidth="63.0" text="Image1" />
+            <TableColumn id="col_nom" fx:id="col_date" onEditCommit="#edit_date" prefWidth="84.0" text="Date" />
+            <TableColumn id="col_prenom" fx:id="col_description" onEditCommit="#edit_Desc" prefWidth="127.0" text="Description" />
+            <TableColumn id="col_date_naissance" fx:id="col_etat" prefWidth="50.0" text="Etat" />
+            <TableColumn id="col_adresse" fx:id="col_lieu" onEditCommit="#edit_lieu" prefWidth="67.0" text="Lieu" />
+            <TableColumn id="col_tel" fx:id="col_nbre_participants" onEditCommit="#edit_nb_part" prefWidth="110.0" text="nb participants" />
          </columns>
       </TableView>
       <Button id="button_add" fx:id="btnajout" alignment="BASELINE_CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="44.0" layoutY="457.0" onAction="#ajoutAction" onMouseClicked="#handleButtonAddAction" prefHeight="31.0" prefWidth="85.0" styleClass="button_Submit" stylesheets="@../styles.css" text="Ajouter" textAlignment="CENTER" textFill="WHITE">
@@ -98,6 +98,10 @@
             <Font name="Lato Bold" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="find_event" layoutX="403.0" layoutY="445.0" mnemonicParsing="false" onAction="#search_event" text="Button" />
+      <Button fx:id="find_event" layoutX="403.0" layoutY="445.0" mnemonicParsing="false" onAction="#search_event" text="map" />
+      <Button layoutX="291.0" layoutY="488.0" mnemonicParsing="false" onAction="#refresh_action" text="refresh" />
+      <Button layoutX="530.0" layoutY="22.0" mnemonicParsing="false" onAction="#front_events_action" text="Button" />
+      <Button fx:id="consulter_comm_btn" layoutX="322.0" layoutY="22.0" mnemonicParsing="false" onAction="#Consulter_commentAction" text="Consulter les comments du event" />
+      <Button fx:id="send_sms_button" layoutX="614.0" layoutY="22.0" mnemonicParsing="false" onAction="#SendsmsAction" text="Send SMS" />
    </children>
 </AnchorPane>

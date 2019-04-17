@@ -22,12 +22,14 @@ public class Event {
     private int note ;
     private String lieu ;
     private int nb_participants ;
+    private int club ;
+    private String image;
 
     
      public Event() {
         
     }
-    public Event(String titre, String image1, Date date_event, String description, String etat, int note, String lieu, int nb_participants) {
+    public Event(String titre, String image1, Date date_event, String description, String etat, int note, String lieu, int nb_participants,int club) {
         this.titre = titre;
         this.image1 = image1;
         this.date_event = date_event;
@@ -36,6 +38,15 @@ public class Event {
         this.note = note;
         this.lieu = lieu;
         this.nb_participants = nb_participants;
+        this.club=club;
+    }
+
+    public int getClub() {
+        return club;
+    }
+
+    public void setClub(int club) {
+        this.club = club;
     }
 
 

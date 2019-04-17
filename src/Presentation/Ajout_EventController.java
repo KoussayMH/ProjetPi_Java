@@ -67,16 +67,25 @@ public class Ajout_EventController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
          eventserv = new EventServices() ;
          e=new Event() ; 
+         
+     boolean verifTitre= true;
+
+         
     }    
 
     @FXML
     private void handleButtonSubmitAction(ActionEvent event) throws SQLException {
+        
+      /*  boolean verifCapacite= true;
+        boolean verifDate= true;*/
+        
          e.setTitre(titre_input.getText());
          e.setImage1(image_input.getText());
          e.setDate_event(Date.valueOf(date_input.getValue()));
          e.setDescription(desc_input.getText());
          e.setEtat("en attente");
          e.setNote(0);
+         e.setClub(0);
          e.setLieu(lieu_input.getText());
          e.setNb_participants(Integer.valueOf(nbre_participant_input.getText()));
 
