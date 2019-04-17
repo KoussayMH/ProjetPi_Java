@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="604.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.EventsAvecPromosController">
+   <children>
+      <JFXListView fx:id="listView" layoutX="31.0" layoutY="84.0" prefHeight="463.0" prefWidth="699.0" stylesheets="@style.css" />
+      <JFXButton fx:id="Suivant" layoutX="670.0" layoutY="557.0" onAction="#SuivantAction" text="Suivant" />
+      <JFXButton fx:id="actualiser" layoutX="603.0" layoutY="557.0" onAction="#actualiserAction" text="Actualiser" />
+   </children>
+</AnchorPane>

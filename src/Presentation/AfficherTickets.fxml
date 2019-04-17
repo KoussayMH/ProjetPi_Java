@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: Black;" styleClass="mainWindow" stylesheets="@../utils/styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.AfficherTicketsController">
+   <children>
+      <TableView id="nn" fx:id="Ticket" layoutX="23.0" layoutY="100.0" prefHeight="200.0" prefWidth="554.0" styleClass="loginInput" stylesheets="@../utils/styles.css">
+        <columns>
+          <TableColumn fx:id="PrixCol" onEditCommit="#changePrixCellEvent" prefWidth="130.0" text="Prix" />
+            <TableColumn fx:id="QteCol" minWidth="0.0" onEditCommit="#changeQuantiteCellEvent" prefWidth="131.0" text="Quantité" />
+          <TableColumn fx:id="EventCol" prefWidth="159.0" text="Event" />
+            <TableColumn fx:id="TitreCol" onEditCommit="#changeTitreCellEvent" prefWidth="133.0" text="Titre" />
+        </columns>
+      </TableView>
+      <Button fx:id="Ajouter" layoutX="346.0" layoutY="312.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="104.0" styleClass="button_Submit" stylesheets="@../utils/styles.css" text="Ajouter">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Button fx:id="Supprimer" layoutX="477.0" layoutY="312.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" styleClass="button_Submit" text="Supprimer">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <TextField fx:id="recherche" layoutX="394.0" layoutY="53.0" styleClass="loginInput" stylesheets="@../utils/styles.css" />
+   </children>
+</AnchorPane>

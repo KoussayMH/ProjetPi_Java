@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Views.ListPromosDispoController">
+   <children>
+      <JFXListView fx:id="listView" layoutX="57.0" layoutY="29.0" prefHeight="275.0" prefWidth="496.0" />
+      <JFXButton fx:id="valider" layoutX="501.0" layoutY="319.0" onAction="#validerAction" text="Button" />
+   </children>
+</AnchorPane>
