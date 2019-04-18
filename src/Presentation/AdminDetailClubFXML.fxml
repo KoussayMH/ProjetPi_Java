@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AdminDetailClubFXMLController">
+   <children>
+      <Pane layoutX="372.0" layoutY="93.0" prefHeight="447.0" prefWidth="570.0" styleClass="menus" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="93.0" />
+      <JFXListView fx:id="menbreLS" layoutX="335.0" layoutY="163.0" prefHeight="270.0" prefWidth="200.0" />
+      <HBox layoutX="27.0" layoutY="146.0" prefHeight="39.0" prefWidth="232.0">
+         <children>
+            <Label prefHeight="39.0" prefWidth="74.0" text="Proprietre" />
+            <Label fx:id="nompropLB" prefHeight="37.0" prefWidth="147.0" text="nom prop" />
+         </children>
+      </HBox>
+      <HBox layoutX="27.0" layoutY="185.0" prefHeight="39.0" prefWidth="232.0">
+         <children>
+            <Label prefHeight="39.0" prefWidth="74.0" text="date creation" />
+            <Label fx:id="dateLB" prefHeight="37.0" prefWidth="147.0" text="date" />
+         </children>
+      </HBox>
+      <HBox layoutX="27.0" layoutY="224.0" prefHeight="39.0" prefWidth="232.0">
+         <children>
+            <Label prefHeight="39.0" prefWidth="74.0" text="Type" />
+            <Label fx:id="typeLB" prefHeight="37.0" prefWidth="147.0" text="nomtype prop" />
+         </children>
+      </HBox>
+      <HBox layoutX="27.0" layoutY="265.0" prefHeight="39.0" prefWidth="232.0">
+         <children>
+            <Label prefHeight="39.0" prefWidth="74.0" text="Statu" />
+            <Label fx:id="statuLB" prefHeight="37.0" prefWidth="147.0" text="nomtype prop" />
+         </children>
+      </HBox>
+      <HBox layoutX="27.0" layoutY="310.0" prefHeight="94.0" prefWidth="232.0">
+         <children>
+            <Label alignment="TOP_LEFT" prefHeight="38.0" prefWidth="74.0" text="Description" />
+            <Label fx:id="descripLB" alignment="TOP_LEFT" prefHeight="98.0" prefWidth="147.0" text="decription" wrapText="true" />
+         </children>
+      </HBox>
+      <ImageView fx:id="imageIV" fitHeight="125.0" fitWidth="169.0" layoutX="350.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+      <HBox layoutX="27.0" layoutY="92.0" prefHeight="39.0" prefWidth="216.0">
+         <children>
+            <Label prefHeight="39.0" prefWidth="85.0" text="Nom club :" />
+            <Label fx:id="clubnameLB" prefHeight="39.0" prefWidth="143.0" text="club name" />
+         </children>
+      </HBox>
+      <Label layoutX="398.0" layoutY="146.0" prefHeight="17.0" prefWidth="74.0" text="menbres" />
+      <JFXButton fx:id="refuserBTN" layoutX="47.0" layoutY="433.0" onAction="#refuserAction" styleClass="button_Submit" text="Refuser" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView glyphName="TIMES" size="20" />
+         </graphic></JFXButton>
+      <JFXButton fx:id="AccepterBTN" layoutX="180.0" layoutY="433.0" onAction="#AccepterAction" styleClass="button_Submit" text="Accepter" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView glyphName="CHECK" size="20" />
+         </graphic></JFXButton>
+      <JFXButton fx:id="suppBTN" layoutX="54.0" layoutY="433.0" onAction="#suppAction" text="Supprimer" visible="false">
+         <graphic>
+            <FontAwesomeIconView glyphName="TIMES" size="20" />
+         </graphic>
+      </JFXButton>
+      <ImageView fitHeight="94.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/back2.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

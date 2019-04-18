@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1000.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.DetailClubFXMLController">
+   <children>
+      <ImageView fitHeight="696.0" fitWidth="1002.0" layoutX="34.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-46.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../Images/back.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="200.0" prefWidth="200.0" styleClass="menus" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <JFXButton fx:id="joinBTN" layoutX="545.0" layoutY="528.0" prefHeight="52.0" prefWidth="164.0" styleClass="button_Submit" text="Join" textFill="WHITE" />
+         </children>
+      </Pane>
+      <JFXButton fx:id="backBTN" layoutX="748.0" layoutY="548.0" onAction="#backAction" prefHeight="50.0" prefWidth="95.0" styleClass="button_Submit" text="Back" textFill="WHITE" />
+      <HBox layoutX="89.0" layoutY="189.0" prefHeight="61.0" prefWidth="289.0">
+         <children>
+            <Label prefHeight="61.0" prefWidth="97.0" text="Nom Club" />
+            <Label fx:id="nomLB" prefHeight="61.0" prefWidth="204.0" text="Label" />
+         </children>
+      </HBox>
+      <HBox layoutX="98.0" layoutY="264.0" prefHeight="46.0" prefWidth="289.0">
+         <children>
+            <Label prefHeight="46.0" prefWidth="68.0" text="Nom Prop" />
+            <Label fx:id="nompropLB" prefHeight="46.0" prefWidth="127.0" text="Label" />
+         </children>
+      </HBox>
+      <HBox layoutX="98.0" layoutY="335.0" prefHeight="46.0" prefWidth="289.0">
+         <children>
+            <Label prefHeight="46.0" prefWidth="92.0" text="Date Creation" />
+            <Label fx:id="dateLB" prefHeight="46.0" prefWidth="127.0" text="Label" />
+         </children>
+      </HBox>
+      <HBox layoutX="109.0" layoutY="394.0" prefHeight="46.0" prefWidth="259.0">
+         <children>
+            <Label prefHeight="46.0" prefWidth="68.0" text="Type" />
+            <Label fx:id="typeLB" prefHeight="46.0" prefWidth="127.0" text="Label" />
+         </children>
+      </HBox>
+      <HBox layoutX="111.0" layoutY="449.0" prefHeight="46.0" prefWidth="253.0">
+         <children>
+            <Label prefHeight="46.0" prefWidth="68.0" text="Nb Menbre" />
+            <Label fx:id="nbLB" prefHeight="46.0" prefWidth="127.0" text="Label" />
+         </children>
+      </HBox>
+      <ImageView fx:id="imageIV" fitHeight="345.0" fitWidth="386.0" layoutX="533.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true" />
+      <HBox layoutX="126.0" layoutY="524.0" prefHeight="46.0" prefWidth="253.0">
+         <children>
+            <Label prefHeight="46.0" prefWidth="68.0" text="Description" />
+            <Label fx:id="descLB" prefHeight="46.0" prefWidth="127.0" text="Label" />
+         </children>
+      </HBox>
+      <Label layoutX="314.0" layoutY="40.0" prefHeight="46.0" prefWidth="315.0" text="Detail club" />
+   </children>
+</AnchorPane>

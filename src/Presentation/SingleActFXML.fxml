@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="950.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Controllers.SingleActFXMLController">
+   <children>
+      <ImageView fx:id="imgIV" fitHeight="250.0" fitWidth="283.0" layoutX="26.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="titreLB" layoutX="361.0" layoutY="46.0" prefHeight="39.0" prefWidth="570.0" text="Label" />
+      <Label fx:id="descLB" layoutX="360.0" layoutY="81.0" prefHeight="207.0" prefWidth="570.0" text="Label" />
+      <Label fx:id="clubLB" layoutX="363.0" layoutY="8.0" prefHeight="39.0" prefWidth="413.0" text="Label" />
+      <Label fx:id="dateLB" layoutX="780.0" layoutY="6.0" prefHeight="39.0" prefWidth="156.0" text="Label" />
+   </children>
+</AnchorPane>

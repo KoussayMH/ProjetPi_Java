@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="200.0" prefWidth="180.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SingleClubFXMLController">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0" styleClass="menus" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="180.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="imageIV" fitHeight="116.0" fitWidth="134.0" pickOnBounds="true" />
+            <HBox prefHeight="23.0" prefWidth="180.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="67.0" text="Nom" />
+                  <Label fx:id="nomLB" prefHeight="17.0" prefWidth="112.0" text="Label" />
+               </children>
+            </HBox>
+            <HBox prefHeight="23.0" prefWidth="180.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="67.0" text="Nb menbre" />
+                  <Label fx:id="nbLB" prefHeight="17.0" prefWidth="110.0" text="Label" />
+               </children>
+            </HBox>
+            <HBox prefHeight="23.0" prefWidth="180.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="68.0" text="nom prop" />
+                  <Label fx:id="nompropLB" prefHeight="17.0" prefWidth="111.0" text="Label" />
+               </children>
+            </HBox>
+            <HBox prefHeight="23.0" prefWidth="180.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="67.0" text="Type" />
+                  <Label fx:id="typeLB" prefHeight="17.0" prefWidth="112.0" text="Label" />
+               </children>
+            </HBox>
+            <JFXButton fx:id="detailBTN" text="Detatil" />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
